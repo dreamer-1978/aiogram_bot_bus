@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc3cebfc-0b4f-4810-a258-e52ada184232" name="Changes" comment="" />
+    <list default="true" id="cc3cebfc-0b4f-4810-a258-e52ada184232" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +31,9 @@
       </map>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -40,6 +46,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25R1SKtAOHjr2jevFZDZz11iwMK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -121,7 +128,7 @@
       <workItem from="1645480119242" duration="103000" />
       <workItem from="1645520890717" duration="10544000" />
       <workItem from="1645542283877" duration="7406000" />
-      <workItem from="1645561665144" duration="3389000" />
+      <workItem from="1645561665144" duration="4213000" />
     </task>
     <servers />
   </component>
