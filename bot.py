@@ -6,7 +6,7 @@ import os
 
 from parser import Parser, URL_MAIL, URL_KUP_LEFT, URL_KUP_RIGHT, URL_GORG
 
-API_TOKEN = '5012311689:AAF_Bx-yr7nXwldwBiYSSI5u9ELK0Joxx3k'
+API_TOKEN = ''
 logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=API_TOKEN)
