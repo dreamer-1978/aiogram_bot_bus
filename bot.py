@@ -17,8 +17,8 @@ dp = Dispatcher(bot)
 async def bus_bot(message: types.Message):
     menu = ReplyKeyboardMarkup(keyboard=[
         [
-            KeyboardButton('Почта')
-            KeyboardButton('Гор-шоссе')
+            KeyboardButton('Почта'),
+            KeyboardButton('Гор-шоссе'),
         ],
         [
             KeyboardButton('Новогиреево'),
