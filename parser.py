@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-
+URL_GORG = 'https://yandex.ru/maps/213/moscow/stops/stop__9643755/?ll=37.837812%2C55.779605&tab=overview&z=16.56'
 URL_MAIL = 'https://yandex.ru/maps/213/moscow/stops/stop__9643717/?ll=37.826318%2C55.775304&tab=overview&z=16.47'
 URL_KUP_RIGHT = 'https://yandex.ru/maps/213/moscow/stops/stop__9643971/?ll=37.823798%2C55.775762&tab=overview&z=17.1'
 URL_KUP_LEFT = 'https://yandex.ru/maps/213/moscow/stops/stop__9643718/?ll=37.822873%2C55.775322&tab=overview&z=16.61'

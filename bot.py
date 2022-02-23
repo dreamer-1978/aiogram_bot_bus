@@ -4,7 +4,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 import logging
 import os
 
-from parser import Parser, URL_MAIL, URL_KUP_LEFT, URL_KUP_RIGHT
+from parser import Parser, URL_MAIL, URL_KUP_LEFT, URL_KUP_RIGHT, URL_GORG
 
 API_TOKEN = '5012311689:AAF_Bx-yr7nXwldwBiYSSI5u9ELK0Joxx3k'
 logging.basicConfig(level=logging.INFO)
@@ -18,6 +18,7 @@ async def bus_bot(message: types.Message):
     menu = ReplyKeyboardMarkup(keyboard=[
         [
             KeyboardButton('Почта')
+            KeyboardButton('Гор-шоссе')
         ],
         [
             KeyboardButton('Новогиреево'),
@@ -28,7 +29,7 @@ async def bus_bot(message: types.Message):
     await message.answer('Куда едем?', reply_markup=menu)
 
 
-@dp.message_handler(Text(equals=['Почта', 'Новогиреево', 'Первомайская']))
+@dp.message_handler(Text(equals=['Почта', 'Новогиреево', 'Первомайская', 'Гор-шоссе']))
 async def choice_bus(message: types.Message):
     if message.text == 'Почта':
         parser = Parser(URL_MAIL)
@@ -44,6 +45,12 @@ async def choice_bus(message: types.Message):
         await message.answer(bus)
     elif message.text == 'Первомайская':
         parser = Parser(URL_KUP_RIGHT)
+        parser.get_content()
+        bus = parser.open_content()
+        parser.erase_content()
+        await message.answer(bus)
+    elif message.text == 'Гор-шоссе':
+        parser = Parser(URL_GORG)
         parser.get_content()
         bus = parser.open_content()
         parser.erase_content()
